@@ -63,4 +63,4 @@ app.get("/ping", async (req, res) => {
 
 
 // vvv On port 3001
-app.listen(1250, () => console.log("Server running on port 1250"));
+app.listen(80, () => console.log("Server running on port 80")).listen(443, () => console.log("Server running on port 443"));

@@ -1,12 +1,12 @@
 const TheirMessage = ({ lastMessage, message }) => {
   const isFirstMessageByUser = !lastMessage || lastMessage.sender.username !== message.sender.username;
-
+  // const avatarStyle = message && message.sender && message.sender.avatar ? { backgroundImage: `url(${message.sender.avatar})` }: {};
   return (
     <div className="message-row">
       {isFirstMessageByUser && (
         <div
           className="message-avatar"
-          style={{ backgroundImage: message.sender && `url(${message.sender.avatar})` }}
+          // style={avatarStyle}
         />
       )}
       {message.attachments && message.attachments.length > 0

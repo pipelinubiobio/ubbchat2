@@ -57,6 +57,10 @@ app.get("/users", async (req, res) => {
   }
 });
 
+app.get("/ping", async (req, res) => {
+    return res.status(200).json({ message: "pong" });
+});
+
 
 // vvv On port 3001
 app.listen(1250, () => console.log("Server running on port 1250"));

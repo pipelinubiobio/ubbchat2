@@ -4,7 +4,7 @@ const axios = require("axios");
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: true }));
+app.use(cors());
 
 const CHAT_ENGINE_PROJECT_ID = "2f767dd8-db38-4617-9a82-51e6778c3328";
 const CHAT_ENGINE_PRIVATE_KEY = "3857d5bb-0356-4cd4-b16f-9f1dc8277bfd";

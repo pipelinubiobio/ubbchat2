@@ -14,7 +14,7 @@ const App = () => {
 
   const onGetChats = () => {
     axios
-      .get('http://localhost:3001/users')
+      .get('http://146.83.198.35/users')
       .then((r) => {
         if (r.data) setMatches(r.data);
       }) // NOTE: over-ride secret
